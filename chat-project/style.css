@@ -1,0 +1,273 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #5865f2;
+    text-decoration: none;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0 !important;
+}
+
+.wrapper {
+    background-color: white;
+    width: 500px;
+    padding: 10px;
+    min-height: 50vh;
+    border-radius: 10px;
+    align-items: center;
+    /* margin: 10px; */
+    padding: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.switch-register-login {
+    text-align: center;
+    margin: 10px, 0;
+}
+
+#login-heading {
+    padding-bottom: 7px;
+    border-bottom: 2px solid gray;
+}
+
+.show-password {
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.mb-3 {
+    position: relative;
+}
+
+
+.users {
+    padding: 20px, 25px;
+    /* margin: 10px; */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 2px solid grey;
+    /* margin-bottom: 10px; */
+}
+
+.pfp {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px ;
+}
+
+.user-content {
+    display: flex;
+    align-items: center;
+}
+
+.bold-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button {
+    color: white;
+    background-color: #5865f2;
+    padding: 3px 7px;
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+#search-user {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* margin: 10px; */
+    min-height: 10vh;
+    margin-bottom: 10px;
+}
+
+
+#search-user-input {
+    border-radius: 7px;
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    padding-left: 5px;
+    top: 10%;
+    margin-bottom: 10px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+#search-user-input.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#search-btn {
+    position: absolute;
+    left: 90%;
+    top: 20%;
+    background-color: white;
+}
+
+#search-btn.active i::before {
+    content: "\f00d";
+}
+
+.list-users {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.list-users::-webkit-scrollbar {
+    width: 0px;
+}
+
+.list-users-idv {
+    text-decoration: none;
+    color: black;
+    padding-right: 15px;
+}
+
+#idv-img {
+    height: 40px;
+    width: 40px;
+}
+
+.status-dot {
+    color: green;
+}
+
+.status-dot.offline {
+    color: grey;
+}
+
+
+.message{
+    color: gray;
+}
+
+#chat-header {
+    justify-content: left;
+}
+
+#return {
+    font-size: 18px;
+}
+
+#chat-user-img {
+    margin: 0 20px;
+}
+
+.chat-box {
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    max-width: 100%;
+    background-color: #f4f4f4;
+}
+
+.chat-box::-webkit-scrollbar {
+    width: 0px;
+}
+.sent {
+    display: flex;
+}
+
+.message-content-sent {
+    max-width: 30vw;
+    background-color: #5865f2;
+    color: white;
+    border-radius: 15px 15px 0 15px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    overflow-wrap: break-word;
+    
+}
+
+.message-content-received {
+    background-color: white;
+    color: black;
+    border-radius: 15px 15px 15px 0px;
+    padding: 5px 10px;
+    margin-right: auto;
+    max-width: 30vw;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+.chat-img {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.message-details {
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.send-message{
+    border-top: 2px solid gray;
+    padding-top: 10px;
+    /* margin-top: 10px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-content-send {
+    height: 35px;
+    width: 55vw;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.send-button {
+    width: 5vw;
+    cursor: pointer;
+}
+
+.error{
+  color: #721c24;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 10px;
+  display: none;
+}
